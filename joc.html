@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cât de mult mă iubești?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game-wrap">
+    <div id="title-area">
+        <h1>Cât de mult mă iubești?</h1>
+        <p>Prinde inimile și cățeii Teckel! 🐾</p>
+    </div>
+    
+    <div id="hud">
+        Prinse: <span id="score-val">0</span> 
+        &nbsp;|&nbsp; 
+        Ratate: <span id="missed-val">0 / 5</span>
+        &nbsp;|&nbsp; 
+        Viteza: <span id="speed-val">1.0x</span>
+    </div>
+
+    <div id="missed-bar">
+        <span class="miss-dot" id="d0"></span>
+        <span class="miss-dot" id="d1"></span>
+        <span class="miss-dot" id="d2"></span>
+        <span class="miss-dot" id="d3"></span>
+        <span class="miss-dot" id="d4"></span>
+    </div>
+
+    <div id="canvas-wrap">
+        <canvas id="gc"></canvas>
+        
+        <button id="pause-btn">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="#e85d8a" id="pause-icon">
+                <rect x="2" y="2" width="4" height="12" rx="1"/><rect x="10" y="2" width="4" height="12" rx="1"/>
+            </svg>
+        </button>
+
+        <div id="speed-badge"></div>
+        <div id="level-up-toast"></div>
+
+        <div id="overlay">
+            <div style="font-size:40px">🐾🩷</div>
+            <h2 id="overlay-title">Ești gata?</h2>
+            <p id="overlay-msg" style="text-align:center; font-size:14px; color:var(--color-text-secondary); max-width:280px;">
+                Prinde obiectele cu găletușa! Dacă ratezi 5, jocul se termină.
+            </p>
+            <button id="start-btn">Începe jocul</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
